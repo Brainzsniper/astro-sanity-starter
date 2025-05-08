@@ -1,34 +1,32 @@
-@import 'tailwindcss';
-@plugin "daisyui";
-
-/* DARK THEME */
-@plugin "daisyui/theme" {
-  name: 'dark';
-  --color-primary: #f6c1b4; /* soft rose */
-  --color-primary-content: #1b1b1e;
-  --color-secondary: #fce3cb; /* muted peach */
-  --color-secondary-content: #1b1b1e;
-  --color-accent: #eae7de; /* ivory/linen white */
-  --color-accent-content: #1b1b1e;
-  --color-neutral: #2c2636; /* warm charcoal */
-  --color-neutral-content: #ffffff;
-  --color-base-100: #1b1b1e;
-  --color-base-200: #2c2636;
-  --color-base-content: #ffffff;
-}
-
-/* LIGHT THEME */
-@plugin "daisyui/theme" {
-  name: 'light';
-  --color-primary: #f6c1b4; /* soft rose */
-  --color-primary-content: #1b1b1e;
-  --color-secondary: #fce3cb; /* muted peach */
-  --color-secondary-content: #1b1b1e;
-  --color-accent: #f8f7f4; /* ivory/linen white */
-  --color-accent-content: #1b1b1e;
-  --color-neutral: #1b1b1e; /* deep ink/graphite */
-  --color-neutral-content: #ffffff;
-  --color-base-100: #ffffff;
-  --color-base-200: #f3f3f7;
-  --color-base-content: #1b1b1e;
-}
+daisyui: {
+  themes: [
+    {
+      light: {
+        primary: "#f6c1b4",
+        "primary-content": "#1b1b1e",
+        secondary: "#fce3cb",
+        "secondary-content": "#1b1b1e",
+        accent: "#f8f7f4",
+        "accent-content": "#1b1b1e",
+        neutral: "#1b1b1e",
+        "neutral-content": "#ffffff",
+        "base-100": "#ffffff",
+        "base-200": "#f3f3f7",
+        "base-content": "#1b1b1e",
+      },
+      dark: {
+        primary: "#f6c1b4",
+        "primary-content": "#1b1b1e",
+        secondary: "#fce3cb",
+        "secondary-content": "#1b1b1e",
+        accent: "#eae7de",
+        "accent-content": "#1b1b1e",
+        neutral: "#2c2636",
+        "neutral-content": "#ffffff",
+        "base-100": "#1b1b1e",
+        "base-200": "#2c2636",
+        "base-content": "#ffffff",
+      },
+    },
+  ],
+},
