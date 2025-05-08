@@ -1,32 +1,42 @@
-daisyui: {
-  themes: [
-    {
-      light: {
-        primary: "#f6c1b4",
-        "primary-content": "#1b1b1e",
-        secondary: "#fce3cb",
-        "secondary-content": "#1b1b1e",
-        accent: "#f8f7f4",
-        "accent-content": "#1b1b1e",
-        neutral: "#1b1b1e",
-        "neutral-content": "#ffffff",
-        "base-100": "#ffffff",
-        "base-200": "#f3f3f7",
-        "base-content": "#1b1b1e",
-      },
-      dark: {
-        primary: "#f6c1b4",
-        "primary-content": "#1b1b1e",
-        secondary: "#fce3cb",
-        "secondary-content": "#1b1b1e",
-        accent: "#eae7de",
-        "accent-content": "#1b1b1e",
-        neutral: "#2c2636",
-        "neutral-content": "#ffffff",
-        "base-100": "#1b1b1e",
-        "base-200": "#2c2636",
-        "base-content": "#ffffff",
-      },
-    },
-  ],
-},
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* DaisyUI Theme Customization */
+@layer base {
+  :root {
+    --p: #f6c1b4;              /* Primary */
+    --pc: #1b1b1e;
+
+    --s: #fce3cb;              /* Secondary */
+    --sc: #1b1b1e;
+
+    --a: #f8f7f4;              /* Accent */
+    --ac: #1b1b1e;
+
+    --n: #1b1b1e;              /* Neutral */
+    --nc: #ffffff;
+
+    --b1: #ffffff;             /* Base */
+    --b2: #f3f3f7;
+    --bc: #1b1b1e;
+  }
+
+  [data-theme="dark"] {
+    --p: #f6c1b4;
+    --pc: #1b1b1e;
+
+    --s: #fce3cb;
+    --sc: #1b1b1e;
+
+    --a: #eae7de;
+    --ac: #1b1b1e;
+
+    --n: #2c2636;
+    --nc: #ffffff;
+
+    --b1: #1b1b1e;
+    --b2: #2c2636;
+    --bc: #ffffff;
+  }
+}
